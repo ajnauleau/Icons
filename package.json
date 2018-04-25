@@ -1,17 +1,22 @@
 {
-  "name": "truffle",
+  "name": "Code",
   "version": "1.0.0",
   "description": "",
-  "main": "truffle.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "iconsTokenIco.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajnauleau/Icons.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajnauleau/Icons/issues"
+  },
+  "homepage": "https://github.com/ajnauleau/Icons#readme",
   "dependencies": {
     "zeppelin-solidity": "1.8.0"
   }
