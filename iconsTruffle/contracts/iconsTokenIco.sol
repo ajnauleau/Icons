@@ -1,10 +1,10 @@
 pragma solidity ^0.4.0;
 
-import '/node_modules/zeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol';
-import '/node_modules/zeppelin-solidity/contracts/token/ERC20/PausableToken.sol';
+import '/zeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol';
+import '/zeppelin-solidity/contracts/token/ERC20/StandardToken.sol';
 
 
-contract iconsTokenIco is PausableToken {
+contract iconsTokenIco is StandardToken {
     using SafeMath for uint256;
 
     string public name = "Icons Token";
@@ -12,7 +12,6 @@ contract iconsTokenIco is PausableToken {
     uint256 public decimals = 18;
 
     uint256 public totalSupply = 1000000 * (10 ** decimals);
-
     uint256 public totalRaised; // total ether raised (in wei)
 
     uint256 public startTimestamp; // timestamp after which ICO will start
@@ -27,7 +26,7 @@ contract iconsTokenIco is PausableToken {
      */
     address public fundsWallet;
 
-    function iconsTokenIco((
+    function iconsTokenIco(
         address _fundsWallet,
         uint256 _startTimestamp,
         uint256 _minCap,

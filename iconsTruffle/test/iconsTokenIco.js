@@ -1,5 +1,5 @@
 
-const iconsTokenIco = artifacts.require('iconsTruffle/contracts/.iconsTokenIco.sol');
+const iconsTokenIco = artifacts.require('/contracts/iconsTokenIco.sol');
 
 contract('iconsTokenIco', accounts => {
 
